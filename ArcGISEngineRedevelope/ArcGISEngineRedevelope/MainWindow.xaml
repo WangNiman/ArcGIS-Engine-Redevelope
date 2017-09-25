@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArcGISEngineRedevelope"
+        xmlns:esri="clr-namespace:ESRI.ArcGIS.Controls;assembly=ESRI.ArcGIS.AxControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <WindowsFormsHost x:Name="header" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></WindowsFormsHost>
+        <WindowsFormsHost x:Name="toc" Grid.Row="1" Grid.Column="0"></WindowsFormsHost>
+        <WindowsFormsHost x:Name="body" Grid.Row="1" Grid.Column="1"></WindowsFormsHost>
+        <StatusBar x:Name="statusBar" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"></StatusBar>
     </Grid>
 </Window>
