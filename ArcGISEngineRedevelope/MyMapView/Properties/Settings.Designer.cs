@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ArcGISEngineRedevelope.Properties {
+namespace MyMapView.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
